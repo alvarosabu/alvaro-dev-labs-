@@ -46,7 +46,7 @@
 
 <script>
 import { ref, watch } from 'vue';
-import IconClose from '/@vite-icons/mdi/close.vue';
+import IconClose from '/@vite-icons/mdi/close';
 import useClickOutside from '../composables/useClickOutside';
 
 const props = {
