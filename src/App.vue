@@ -7,7 +7,7 @@
     >
       Open Modal
     </button>
-    <ModalDialog :show="showModal">
+    <ModalDialog :show="showModal" @close="showModal = false">
       <p class="mb-4">Gokuu is...</p>
       <img src="https://i.gifer.com/QjMQ.gif" />
     </ModalDialog>

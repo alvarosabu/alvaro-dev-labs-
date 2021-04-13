@@ -64,13 +64,13 @@ export default {
   name: 'ModalDialog',
   props,
   components,
-  setup(props) {
+  setup(props, context) {
     const showModal = ref(false);
     const modal = ref(null);
     const { onClickOutside } = useClickOutside();
 
     function closeModal() {
-      showModal.value = false;
+      context.emit('close');
     }
 
     onClickOutside(modal, () => {
